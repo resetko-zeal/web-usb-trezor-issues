@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+      }
+
+      #app {
+        display: block;
+        border: 1px solid red;
+        background: magenta;
+        width: 300px;
+        height: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script> -->
+
+    <iframe
+      id="app"
+      allow="usb"
+      src="https://bar-example.com:5173/frame.html"
+    ></iframe>
+
+    <div>
+      <script type="module" src="/src/main.ts"></script>
+
+      <button id="init-button">init</button>
+      <hr />
+      <button id="keys-button" disabled>fetch public key</button>
+      <hr />
+      <pre id="memo"></pre>
+      <hr />
+      <hr />
+      <button id="usb-button">usb key</button>
+      <hr />
+    </div>
+  </body>
+</html>
