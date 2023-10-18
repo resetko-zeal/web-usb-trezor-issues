@@ -17,7 +17,7 @@
         display: block;
         border: 1px solid red;
         background: magenta;
-        width: 300px;
+        width: 800px;
         height: 500px;
         margin: 0 auto;
       }
@@ -30,11 +30,13 @@
     <iframe
       id="app"
       allow="usb"
-      src="https://bar-example.com:5173/frame.html"
+      src="https://bar-example.com:5173/bar.html"
     ></iframe>
 
     <div>
       <script type="module" src="/src/main.ts"></script>
+
+      <h1 id="location-placeholder"></h1>
 
       <button id="init-button">init</button>
       <hr />

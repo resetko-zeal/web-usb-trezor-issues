@@ -5,6 +5,10 @@ const initButton = document.getElementById("init-button")!;
 
 const usbButton = document.getElementById("usb-button")!;
 
+document.getElementById("location-placeholder")!.innerText = `${
+  window.location.hostname
+}[${window.parent === window ? "root" : "frame"}]`;
+
 usbButton.addEventListener("click", async () => {
   try {
     const device = await navigator.usb.requestDevice({

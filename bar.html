@@ -11,10 +11,21 @@
         min-height: 100%;
         background: #ccc;
       }
+
+      #app {
+        display: block;
+        border: 1px solid green;
+        background: cyan;
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>
+
+    <h1 id="location-placeholder"></h1>
 
     <button id="init-button">init</button>
     <hr />
@@ -25,5 +36,11 @@
     <hr />
     <button id="usb-button">usb key</button>
     <hr />
+
+    <iframe
+      id="app"
+      allow="usb"
+      src="https://baz-example.com:5173/baz.html"
+    ></iframe>
   </body>
 </html>
